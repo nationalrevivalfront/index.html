@@ -74,20 +74,10 @@
             background-position: center center;
             background-repeat: no-repeat;
 }
-         .bg-manifesto {
-    background-image: url('./Images/ManifestoBG.png');
-    background-size: cover;
-    background-position: right bottom;
-    background-repeat: no-repeat;
+.bg-manifesto {
+    background: #f7f9fc;
     position: relative;
-}
-.bg-manifesto::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.10);
-    backdrop-filter: blur(1px);
-}
+} backdrop-filter: blur(1px);
  .bg-constitution {
     background: #f7f9fc;
     position: relative;
@@ -227,8 +217,8 @@
                         
                         <!-- Premium Redirect Action Buttons -->
                         <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                            <button onclick="navigateTo('manifesto')" class="btn-press bg-[#FF4F18] hover:bg-[#E03E0F] text-white font-montserrat font-black px-8 py-4 rounded-full text-sm md:text-base tracking-widest uppercase shadow-xl shadow-orange-500/30">
-                                OUR MANIFESTO
+                            <button onclick="navigateTo('')" class="btn-press bg-[#FF4F18] hover:bg-[#E03E0F] text-white font-montserrat font-black px-8 py-4 rounded-full text-sm md:text-base tracking-widest uppercase shadow-xl shadow-orange-500/30">
+                                OUR 
                             </button>
                             <button onclick="navigateTo('constitution')" class="btn-press bg-white/10 hover:bg-white/20 text-white font-montserrat font-black px-8 py-4 rounded-full text-sm md:text-base tracking-widest uppercase border border-white/30 backdrop-blur-sm">
                                 OUR CONSTITUTION
@@ -342,29 +332,46 @@
 
         <!-- ================= PAGE 2: OUR MANIFESTO ================= -->
 <section id="page-manifesto" class="page-fade hidden-page select-text">
-    <div class="bg-manifesto min-h-screen flex flex-col justify-center items-center py-16 px-4 relative overflow-hidden">
+    <div class="bg-manifesto min-h-screen flex flex-col justify-center items-center py-16 px-4">
+
         <!-- Floating Manifesto Card -->
-        <div class="relative z-10 max-w-4xl bg-white/88 backdrop-blur-xl p-8 md:p-12 rounded-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.25)] border border-white/50 text-center space-y-8">
-            <h1 class="font-montserrat font-extrabold text-4xl md:text-5xl text-slate-900 uppercase tracking-wider pb-2 border-b-2 border-[#FF4F18]/50 inline-block">
-                OUR MANIFESTO
-            </h1>
+        <div class="relative max-w-4xl rounded-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.25)] border border-white/50 overflow-hidden">
 
-            <div class="space-y-6 text-slate-800 text-sm sm:text-base md:text-lg leading-relaxed text-left md:text-justify font-serif-content">
-                <p>
-                    India stands at a crossroads. Blessed with the world's largest youth population, a civilisational heritage spanning millennia, and a democratic tradition that has endured against all odds, India possesses every ingredient required for greatness.
-                </p>
-
-                <p>
-                    The National Revival Front was born from the conviction that India deserves better — that the problems afflicting our nation are not inevitable, but the product of failed policies, captured institutions, and a political class that has substituted slogans for solutions.
-                </p>
+            <!-- Background Image Inside Card -->
+            <div class="absolute inset-0">
+                <img src="./Images/ManifestoBG.png"
+                     alt="NRF Manifesto"
+                     class="w-full h-full object-cover">
             </div>
 
-            <div class="pt-4 flex justify-center">
-                <a href="https://drive.google.com/file/d/1Go9uOcNrubhH5gDh2Pp4KMNN20wZ8Dx6/view?usp=sharing"
-                   target="_blank"
-                   class="btn-press bg-[#FF4F18] hover:bg-[#E03E0F] text-white font-montserrat font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider">
-                    VIEW MANIFESTO
-                </a>
+            <!-- White Overlay -->
+            <div class="absolute inset-0 bg-white/88"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 p-8 md:p-12 text-center space-y-8">
+
+                <h1 class="font-montserrat font-extrabold text-4xl md:text-5xl text-slate-900 uppercase tracking-wider pb-2 border-b-2 border-[#FF4F18]/50 inline-block">
+                    OUR MANIFESTO
+                </h1>
+
+                <div class="space-y-6 text-slate-800 text-sm sm:text-base md:text-lg leading-relaxed text-left md:text-justify font-serif-content">
+                    <p>
+                        India stands at a crossroads. Blessed with the world's largest youth population, a civilisational heritage spanning millennia, and a democratic tradition that has endured against all odds, India possesses every ingredient required for greatness.
+                    </p>
+
+                    <p>
+                        The National Revival Front was born from the conviction that India deserves better — that the problems afflicting our nation are not inevitable, but the product of failed policies, captured institutions, and a political class that has substituted slogans for solutions.
+                    </p>
+                </div>
+
+                <div class="pt-4 flex justify-center">
+                    <a href="https://drive.google.com/file/d/1Go9uOcNrubhH5gDh2Pp4KMNN20wZ8Dx6/view?usp=sharing"
+                       target="_blank"
+                       class="btn-press bg-[#FF4F18] hover:bg-[#E03E0F] text-white font-montserrat font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider">
+                        VIEW MANIFESTO
+                    </a>
+                </div>
+
             </div>
 
         </div>
