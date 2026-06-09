@@ -116,12 +116,9 @@
     background-repeat: no-repeat;
         }
 .bg-founder-message {
-    background-image: url('./Images/FounderMessageBG.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #f7f9fc;
+    position: relative;
 }
-
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -543,61 +540,27 @@
   </div>
 </section>
         <!-- ================= PAGE 7: FOUNDER'S MESSAGE ================= -->
-        <section id="page-message" class="page-fade hidden-page select-text">
+<section id="page-message" class="page-fade hidden-page select-text">
     <div class="bg-founder-message min-h-screen flex flex-col justify-center items-center py-16 px-4">
-        <div class="max-w-4xl bg-white/95 backdrop-blur-md p-8 md:p-14 rounded-3xl shadow-2xl border border-orange-500/10 space-y-10">
 
-            <h1 class="text-center font-montserrat font-extrabold text-3xl md:text-5xl uppercase tracking-wider text-slate-900 border-b-4 border-[#FF4F18] pb-2 inline-block mx-auto w-full">
-                FOUNDER'S MESSAGE
-            </h1>
+        <div class="relative max-w-4xl rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
 
-            <!-- Hero Quote -->
-            <div class="border-l-4 border-[#FF4F18] pl-6 py-2 bg-orange-500/5 rounded-r-xl">
-                <p class="font-serif-content italic text-xl md:text-2xl text-[#0B1A30] font-bold">
-                    "A Nation Does Not Decline by Accident"
-                </p>
+            <!-- Background Image Inside Card -->
+            <div class="absolute inset-0">
+                <img src="./Images/FounderMessageBG.png"
+                     alt="Founder's Message Background"
+                     class="w-full h-full object-cover object-center">
             </div>
 
-            <!-- Main Content -->
-            <div class="space-y-6 text-slate-700 font-serif-content text-base md:text-lg leading-relaxed text-justify">
+            <!-- White Overlay -->
+            <div class="absolute inset-0 bg-white/88"></div>
 
-                <p>
-                    India is not a problem to be managed. India is a civilisation waiting to be unleashed.
-                    I have walked the villages of this land where children study under broken roofs. I have sat with farmers who have surrendered everything and received nothing. I have stood in hospitals where the poor are turned away, and in courts where justice runs decades behind the man who needs it most.
-                </p>
-
-                <p>
-                    Through all of this, I have heard one question asked in every language, in every state, in every corner of this extraordinary nation:
-                    <strong>Why is India not yet what it should be?</strong>
-                    That question is the reason the National Revival Front exists. Not rage. Not ambition. Responsibility.
-                </p>
-
-                <p>
-                    We are not a party of slogans. Every promise in our manifesto comes with a plan, a cost estimate, and a timeline. We will not rename old schemes and call it reform. We will not announce inaugurations as achievements. We will not govern India by press release.
-                </p>
-
-                <p>
-                    When we succeed, you will see it in your child's classroom, in your hospital's waiting room, in your farmer father's bank account, and in the safety your daughter feels walking home after dark.
-                </p>
-
-                <p>
-                    The NRF will be judged—and should be judged—by outcomes, not optics. We welcome that standard.
-                </p>
-
-                <p>
-                    At the end, I will address three words to the citizens of the Union of India:
-                </p>
-            </div>
-
-            <!-- Highlight Block -->
-            <div class="pt-6 border-t border-slate-100 flex flex-col items-center space-y-3">
-                <div class="flex items-center space-x-3 text-[#FF4F18] font-montserrat font-black text-xl md:text-2xl tracking-widest uppercase">
-                    <i class="fa-solid fa-flag"></i>
-                    <span>Rise • Unite • Revive</span>
-                </div>
-            </div>
+            <!-- Content -->
+            <div class="relative z-10 p-8 md:p-14 space-y-10">
+  </div>
 
         </div>
+
     </div>
 </section>
 
