@@ -90,10 +90,7 @@
     backdrop-filter: blur(1px);
 }
 .bg-donate {
-    background-image: url('./Images/DonationBG.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: #f7f9fc;
     position: relative;
 }
 
@@ -426,30 +423,51 @@
 </section>
 
         <!-- ================= PAGE 4: DONATION ================= -->
-        <section id="page-donation" class="page-fade hidden-page select-text">
-    <div class="bg-donate min-h-screen flex flex-col justify-center items-center py-16 px-4 relative overflow-hidden">
-        <!-- Floating Donation Card -->
-        <div class="relative z-10 max-w-2xl bg-white/88 backdrop-blur-xl p-10 md:p-14 rounded-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.25)] border border-white/50 text-center space-y-8">
-                    <div class="w-20 h-20 bg-[#FF4F18]/10 rounded-full flex items-center justify-center mx-auto text-[#FF4F18]">
-                        <i class="fa-solid fa-hand-holding-dollar text-4xl"></i>
-                    </div>
-                    
-                    <h1 class="font-montserrat font-black text-3xl md:text-4xl text-slate-900 uppercase tracking-wider">
-                        DONATION
-                    </h1>
-                    
-                    <p class="font-serif-content text-lg md:text-xl text-slate-700 italic max-w-lg mx-auto">
-                        "Currently we don't have any bank account for this political party."
-                    </p>
+        <!-- ================= PAGE 4: DONATION ================= -->
+<section id="page-donation" class="page-fade hidden-page select-text">
+    <div class="bg-donate min-h-screen flex flex-col justify-center items-center py-16 px-4">
 
-                    <div class="pt-6">
-                        <button onclick="navigateTo('home')" class="btn-press bg-slate-900 hover:bg-slate-800 text-white font-montserrat font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider">
-                            Return Home
-                        </button>
-                    </div>
-                </div>
+        <!-- Floating Donation Card -->
+        <div class="relative max-w-2xl rounded-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.25)] border border-white/50 overflow-hidden">
+
+            <!-- Background Image INSIDE Card -->
+            <div class="absolute inset-0">
+                <img src="./Images/DonationBG(1).png"
+                     alt="Donation Background"
+                     class="w-full h-full object-cover">
             </div>
-        </section>
+
+            <!-- White Overlay -->
+            <div class="absolute inset-0 bg-white/88"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 p-10 md:p-14 text-center space-y-8">
+
+                <div class="w-20 h-20 bg-[#FF4F18]/10 rounded-full flex items-center justify-center mx-auto text-[#FF4F18]">
+                    <i class="fa-solid fa-hand-holding-dollar text-4xl"></i>
+                </div>
+
+                <h1 class="font-montserrat font-black text-3xl md:text-4xl text-slate-900 uppercase tracking-wider">
+                    DONATION
+                </h1>
+
+                <p class="font-serif-content text-lg md:text-xl text-slate-700 italic max-w-lg mx-auto">
+                    "Currently we don't have any bank account for this political party."
+                </p>
+
+                <div class="pt-6">
+                    <button onclick="navigateTo('home')"
+                        class="btn-press bg-slate-900 hover:bg-slate-800 text-white font-montserrat font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider">
+                        Return Home
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
         <!-- ================= PAGE 5: ABOUT US ================= -->
 <section id="page-about" class="page-fade hidden-page select-text">
