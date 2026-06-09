@@ -73,15 +73,11 @@
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-}
 .bg-manifesto {
     background: #f7f9fc;
     position: relative;
-} backdrop-filter: blur(1px);
- .bg-constitution {
-    background: #f7f9fc;
-    position: relative;
-        }
+    backdrop-filter: blur(1px);
+}
 .bg-donate {
     background-image: url('./Images/DonationBG.png');
     background-size: cover;
@@ -133,14 +129,13 @@
         .page-fade {
             transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
         }
-        .hidden-page {
-            display: none !important;
-            opacity: 0;
-            transform: translateY(10px);
-        }
-<style>
-@media (max-width: 768px) {
+.hidden-page {
+    display: none !important;
+    opacity: 0;
+    transform: translateY(10px);
+}
 
+@media (max-width: 768px) {
     .bg-manifesto .relative.z-10,
     .bg-donate .relative.z-10,
     .bg-about .relative.z-10,
@@ -218,7 +213,7 @@
                         <!-- Premium Redirect Action Buttons -->
                         <div class="flex flex-col sm:flex-row gap-4 pt-4">
                             <button onclick="navigateTo('')" class="btn-press bg-[#FF4F18] hover:bg-[#E03E0F] text-white font-montserrat font-black px-8 py-4 rounded-full text-sm md:text-base tracking-widest uppercase shadow-xl shadow-orange-500/30">
-                                OUR 
+                                OUR MANIFESTO
                             </button>
                             <button onclick="navigateTo('constitution')" class="btn-press bg-white/10 hover:bg-white/20 text-white font-montserrat font-black px-8 py-4 rounded-full text-sm md:text-base tracking-widest uppercase border border-white/30 backdrop-blur-sm">
                                 OUR CONSTITUTION
