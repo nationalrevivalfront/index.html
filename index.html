@@ -88,10 +88,9 @@
     background: rgba(255,255,255,0.10);
     backdrop-filter: blur(1px);
 }
-        .bg-constitution {
-            background-image: url('./Images/ConstitutionBG.jpg');
-            background-size: cover;
-            background-position: center;
+ .bg-constitution {
+    background: #f7f9fc;
+    position: relative;
         }
 .bg-donate {
     background-image: url('./Images/DonationBG.png');
@@ -374,27 +373,50 @@
 </section>
 
         <!-- ================= PAGE 3: OUR CONSTITUTION ================= -->
-        <section id="page-constitution" class="page-fade hidden-page select-text">
-            <div class="bg-constitution min-h-screen flex flex-col justify-center items-center py-16 px-4">
-               <div class="max-w-3xl bg-white/10 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-2xl border border-white/20 text-center space-y-8">
-                    <h1 class="font-montserrat font-extrabold text-3xl md:text-4xl text-slate-900 uppercase tracking-wider pb-2 border-b-2 border-[#FF4F18]/50 inline-block">
-                        OUR CONSTITUTION
-                    </h1>
-                    
-                    <div class="py-4">
-                        <p class="font-serif-content text-xl md:text-2xl text-[#0B1A30] font-bold leading-relaxed">
-                            We are sorry, the constitution of the <span class="text-[#FF4F18]">NATIONAL REVIVAL FRONT (NRF)</span> is under process and will be uploaded soon.
-                        </p>
-                    </div>
+       <section id="page-constitution" class="page-fade hidden-page select-text">
+    <div class="bg-constitution min-h-screen flex flex-col justify-center items-center py-16 px-4">
 
-                    <div class="pt-4 flex justify-center">
-                        <button onclick="navigateTo('home')" class="btn-press bg-slate-900 hover:bg-slate-800 text-white font-montserrat font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider">
-                            Go Back Home
-                        </button>
-                    </div>
-                </div>
+        <!-- Floating Constitution Card -->
+        <div class="relative max-w-3xl rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
+
+            <!-- Background Image Inside Card -->
+            <div class="absolute inset-0">
+                <img src="./Images/ConstitutionBG.jpg"
+                     alt="NRF Constitution"
+                     class="w-full h-full object-cover">
             </div>
-        </section>
+
+            <!-- White Overlay -->
+            <div class="absolute inset-0 bg-white/88"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 p-8 md:p-12 text-center space-y-8">
+
+                <h1 class="font-montserrat font-extrabold text-3xl md:text-4xl text-slate-900 uppercase tracking-wider pb-2 border-b-2 border-[#FF4F18]/50 inline-block">
+                    OUR CONSTITUTION
+                </h1>
+
+                <div class="py-4">
+                    <p class="font-serif-content text-xl md:text-2xl text-[#0B1A30] font-bold leading-relaxed">
+                        We are sorry, the constitution of the
+                        <span class="text-[#FF4F18]">NATIONAL REVIVAL FRONT (NRF)</span>
+                        is under process and will be uploaded soon.
+                    </p>
+                </div>
+
+                <div class="pt-4 flex justify-center">
+                    <button onclick="navigateTo('home')"
+                        class="btn-press bg-slate-900 hover:bg-slate-800 text-white font-montserrat font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider">
+                        Go Back Home
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
         <!-- ================= PAGE 4: DONATION ================= -->
         <section id="page-donation" class="page-fade hidden-page select-text">
