@@ -109,12 +109,6 @@
     background: #f7f9fc;
     position: relative;
 }
-        .bg-inspirations {
-    background-image: url('./Images/InspirationBG.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-        }
 .bg-founder-message {
     background: #f7f9fc;
     position: relative;
@@ -526,17 +520,290 @@
     </div>
 </section>
 
-        <!-- ================= PAGE 6: OUR INSPIRATIONS ================= -->
-   <section id="page-inspirations" class="page-fade hidden-page select-text">
-  <div class="bg-inspirations min-h-screen py-16 px-4 flex flex-col justify-between relative">
-    <!-- Page Title Overlay -->
-    <div class="max-w-4xl mx-auto w-full mb-8 text-center bg-black/50 backdrop-blur-md py-4 px-8 rounded-full border border-white/10 shadow-lg">
-      <h1 class="font-cinzel font-black text-2xl md:text-4xl text-white tracking-widest uppercase">
-        OUR INSPIRATIONS
-      </h1>
-    </div>
-  </div>
-</section>
+        <!-- ================= PAGE 6: OUR INSPIRATIONS (UPDATED WITH INTERACTIVE BIOGRAPHY CARDS) ================= -->
+        <section id="page-inspirations" class="page-fade hidden-page bg-inspirations min-h-[calc(100vh-80px)] py-12 px-4 sm:px-6 relative">
+            <div class="relative z-10 max-w-7xl mx-auto flex flex-col items-center">
+                
+                <!-- Main Header Overlay -->
+                <div class="w-full max-w-4xl mb-12 text-center bg-[#0B1A30] py-5 px-6 sm:px-12 rounded-3xl border border-white/10 shadow-xl">
+                    <h1 class="font-cinzel font-black text-2xl sm:text-3xl md:text-4xl text-white tracking-widest uppercase">
+                        OUR INSPIRATIONS
+                    </h1>
+                    <p class="font-sans text-xs sm:text-sm text-slate-300 font-medium tracking-wide mt-2">
+                        Guiding Principles for a Rising Nation. Click on portraits or buttons to learn about their legacy.
+                    </p>
+                </div>
+
+                <!-- Inspirations Responsive Card Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 w-full px-2 sm:px-0">
+                    
+                    <!-- Subhash Chandra Bose -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Subhas_Chandra_Bose" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Netaji_Subhas_Chandra_Bose_in_uniform.jpg" alt="Netaji Subhash Chandra Bose" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Subhash Chandra Bose
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Revolutionary & Patriot</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Subhas_Chandra_Bose" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Khudiram Bose -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Khudiram_Bose" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Khudiram_Bose.JPG" alt="Khudiram Bose" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Khudiram Bose
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Youth Freedom Fighter</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Khudiram_Bose" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- APJ Abdul Kalam -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/A._P._J._Abdul_Kalam_in_2008.jpg" alt="APJ Abdul Kalam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    APJ Abdul Kalam
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Scientist & President</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- JRD Tata -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/J._R._D._Tata" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/J._R._D._Tata_1932.jpg" alt="JRD Tata" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    JRD Tata
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Industrialist & Visionary</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/J._R._D._Tata" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- AJC Bose -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Jagadish_Chandra_Bose" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Jagadish_Chandra_Bose_photograph_port_2.jpg" alt="AJC Bose" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    AJC Bose
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Pioneering Polymath Scientist</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Jagadish_Chandra_Bose" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Swami Vivekananda -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Swami_Vivekananda" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Swami_Vivekananda_1893_Chicago.jpg" alt="Swami Vivekananda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Swami Vivekananda
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Philosopher & Spiritual Guide</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Swami_Vivekananda" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Rani Laxmi Bai -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Rani_of_Jhansi" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Lakshmibai_of_Jhansi.jpg" alt="Rani Laxmi Bai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Rani Laxmi Bai
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Warrior Queen of Jhansi</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Rani_of_Jhansi" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sardar Vallabhbhai Patel -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Vallabhbhai_Patel" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Sardar_Patel_cropped.jpg" alt="Sardar Vallabhbhai Patel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Sardar Vallabhbhai Patel
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">The Iron Man of India</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Vallabhbhai_Patel" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dr. Bidhan Chandra Roy -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Bidhan_Chandra_Roy" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bidhan_Chandra_Roy.png" alt="Dr. Bidhan Chandra Roy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Dr. Bidhan Chandra Roy
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Physician & Modern Maker of Bengal</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Bidhan_Chandra_Roy" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Savitribai Phule -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Savitribai_Phule" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Savitribai_Phule.JPG" alt="Savitribai Phule" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Savitribai Phule
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Social Reformer & Educator</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Savitribai_Phule" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kiran Bedi -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-slate-200/60 hover:border-[#FF4F18]/30 transition-all duration-300 flex flex-col h-full">
+                        <a href="https://en.wikipedia.org/wiki/Kiran_Bedi" target="_blank" class="block aspect-[3/4] w-full overflow-hidden relative bg-slate-100 btn-press">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Dr_Kiran_Bedi_photo.jpg" alt="Kiran Bedi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="bg-white/90 text-slate-900 font-montserrat font-bold text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                    Read Biography <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div class="p-4 flex-grow flex flex-col justify-between bg-slate-50 border-t border-slate-100 select-text">
+                            <div class="mb-4">
+                                <h3 class="font-montserrat font-black text-slate-800 text-sm md:text-base leading-tight tracking-wide select-text">
+                                    Kiran Bedi
+                                </h3>
+                                <span class="text-xs text-slate-500 font-medium select-text">Pioneering Officer & Administrator</span>
+                            </div>
+                            <a href="https://en.wikipedia.org/wiki/Kiran_Bedi" target="_blank" class="btn-press mt-auto inline-flex items-center justify-center gap-2 bg-[#0B1A30] hover:bg-[#FF4F18] text-white font-montserrat font-bold text-xs py-2 px-3 rounded-lg transition-colors duration-200">
+                                <span>WIKIPEDIA</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <!-- ================= PAGE 7: FOUNDER'S MESSAGE ================= -->
 <section id="page-message" class="page-fade hidden-page select-text">
     <div class="bg-founder-message min-h-screen flex flex-col justify-center items-center py-16 px-4">
